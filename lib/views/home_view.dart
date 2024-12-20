@@ -8,8 +8,44 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Portfolio'),
-        centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 2,
+        title: const Text(
+          "Hitendra Moraniya",
+          style: TextStyle(color: Colors.black),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20, right: 20),
+                child: const Text(
+                  "Home",
+                  style: TextStyle(color: Colors.black),
+                ),
+              )),
+          Padding(
+            padding: EdgeInsets.only(left: 20, right: 20),
+            child: TextButton(
+                onPressed: () {},
+                child:
+                    const Text("About", style: TextStyle(color: Colors.black))),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 20, right: 20),
+            child: TextButton(
+                onPressed: () {},
+                child: const Text("Projects",
+                    style: TextStyle(color: Colors.black))),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 20, right: 20),
+            child: TextButton(
+                onPressed: () {},
+                child: const Text("Contact",
+                    style: TextStyle(color: Colors.black))),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
